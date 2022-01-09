@@ -3,4 +3,7 @@ head(mechaCar_MGP)
 library(tidyverse)
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mechaCar_MGP)
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mechaCar_MGP))
-
+mechaCar_Coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F) 
+head(mechaCar_Coil)
+total_summary <- mechaCar_Coil %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance_PSI=var(PSI), StdDiv_PSI=sd(PSI), .groups = 'keep')
+lot_summary <- mechaCar_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance_PSI=var(PSI), StdDiv_PSI=sd(PSI), .groups = 'keep')
