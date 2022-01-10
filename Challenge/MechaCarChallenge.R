@@ -7,3 +7,7 @@ mechaCar_Coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFact
 head(mechaCar_Coil)
 total_summary <- mechaCar_Coil %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance_PSI=var(PSI), StdDiv_PSI=sd(PSI), .groups = 'keep')
 lot_summary <- mechaCar_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance_PSI=var(PSI), StdDiv_PSI=sd(PSI), .groups = 'keep')
+t.test(mechaCar_Coil$PSI, mu=1500)
+t.test(subset(mechaCar_Coil$PSI, mechaCar_Coil$Manufacturing_Lot=="Lot1"), mu=1500)
+t.test(subset(mechaCar_Coil$PSI, mechaCar_Coil$Manufacturing_Lot=="Lot2"), mu=1500)
+t.test(subset(mechaCar_Coil$PSI, mechaCar_Coil$Manufacturing_Lot=="Lot3"), mu=1500)
