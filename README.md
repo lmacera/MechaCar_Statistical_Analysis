@@ -60,4 +60,5 @@ Given the significances level of 0.05%, we determined that for Lots 1 and 2 we d
 A study that would be helpful to compare the MechaCar to the competition, would be to compare the maintenance cost of different cars based on vehicle classes. Our hypotheses would be:
   - H0: There is no statistical difference between the maintenance cost of the car and at least one vehicle class.
   - Ha: There is a statistical difference between the maintenance cost of the car and at least one vehicle class.
+
 This will help to determine the long-term cost of the MechCar compared to that of its competitors. To measure this we could run an linear regression to find the statistical significance for our hypothesis testing but also the r-squared value to determine variability of our cost.
