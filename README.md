@@ -61,4 +61,4 @@ A study that would be helpful to compare the MechaCar to the competition, would 
   - H0: There is no statistical difference between the maintenance cost of the car and at least one vehicle class.
   - Ha: There is a statistical difference between the maintenance cost of the car and at least one vehicle class.
 
-This will help to determine the long-term cost of the MechCar compared to that of its competitors. To measure this we could run an linear regression to find the statistical significance for our hypothesis testing but also the r-squared value to determine variability of our cost.
+This will help to determine the long-term cost of the MechCar compared to that of its competitors. To measure this we could run an linear regression to find the statistical significance for our hypothesis testing but also the r-squared value to determine variability of our cost. For this we would need the maintenance cost of each vehicle over a specified amount of time and the vehicle classification.
